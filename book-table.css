@@ -1,0 +1,84 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root{
+    --dark: rgb(20,20,20);
+    --red: rgb(167, 18, 183);
+    
+
+}
+
+
+
+
+  body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.538)), url("https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-clip: border-box;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  section{
+    margin: auto;
+    margin-top: 30px;
+    height: 50%;
+    width: 80%;
+    border-radius: 20px;
+    display: flex;
+  }
+  
+  div{
+   margin: 30px;
+    padding: 30px;
+  
+  }
+  
+  .title{
+    width: 30%;
+  }
+  
+  h1{
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    font-size: 80px;
+  }
+  
+  .form{
+      width: 60%;
+  }
+  
+  form{
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  
+  
+  input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    outline: none;
+    padding-left: 5px;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  
+  input::placeholder{
+    color: #fff;
+  }
+  
+  .contact-in-btn:hover{
+    cursor: pointer;
+  }
