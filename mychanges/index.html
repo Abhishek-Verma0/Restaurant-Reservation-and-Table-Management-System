@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://kit.fontawesome.com/a3111be24c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <!--<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">-->
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">-->
+    
+</head>
+<body>
+    
+    
+  <header class="header">
+    
+    
+    <h2 class="logo_name">Amandal's</h2></div>
+    <nav class="navbar">
+        
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#">Contact</a>
+        <!--<div class="backdrop"></div>-->
+    </nav>
+    
+</header>
+
+        
+    
+    <!--<div class="nav-bg"></div>-->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    
+        
+    <div class="bg-video-wrap">
+        <video src="./Untitled video - Made with Clipchamp (2).mp4" loop muted autoplay>
+        </video>
+        <div class="overlay">
+        </div>
+        <div id="blob"></div>
+        <div id="blur"></div>
+        <h1 class="words">
+        Cooking is like love. It should be entered into with abandon or not at all.
+         <span class="magic">
+            <span class="magic-star">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><path d="M94.4,49.294C61.484,44.055,55.945,38.516,50.706,5.6c-0.127-0.801-1.284-0.801-1.411,0  C44.055,38.516,38.516,44.055,5.6,49.294c-0.801,0.127-0.801,1.284,0,1.411c32.915,5.24,38.454,10.779,43.694,43.694  c0.127,0.801,1.284,0.801,1.411,0c5.24-32.915,10.779-38.454,43.694-43.694C95.2,50.578,95.2,49.422,94.4,49.294z"/></svg>
+            </span>
+            <span class="magic-star">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><path d="M94.4,49.294C61.484,44.055,55.945,38.516,50.706,5.6c-0.127-0.801-1.284-0.801-1.411,0  C44.055,38.516,38.516,44.055,5.6,49.294c-0.801,0.127-0.801,1.284,0,1.411c32.915,5.24,38.454,10.779,43.694,43.694  c0.127,0.801,1.284,0.801,1.411,0c5.24-32.915,10.779-38.454,43.694-43.694C95.2,50.578,95.2,49.422,94.4,49.294z"/></svg>
+            </span>
+            <span class="magic-star">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><path d="M94.4,49.294C61.484,44.055,55.945,38.516,50.706,5.6c-0.127-0.801-1.284-0.801-1.411,0  C44.055,38.516,38.516,44.055,5.6,49.294c-0.801,0.127-0.801,1.284,0,1.411c32.915,5.24,38.454,10.779,43.694,43.694  c0.127,0.801,1.284,0.801,1.411,0c5.24-32.915,10.779-38.454,43.694-43.694C95.2,50.578,95.2,49.422,94.4,49.294z"/></svg></span>
+            <span class="magic-text">
+              Fine dining</span></span> is an experience that engages all the senses, from the aromas to the presentation.
+        </h1>
+    </div>
+
+
+<!--
+    <div class="bg">
+      <div class="contnt">
+        <div class="container">
+          <div class="hdmi">
+            <div class="cl md lg">
+              <p class="cnter para">
+                I'm the bridge connecting the visual elegance of front-end development with the power of back-end engineering
+              </p>
+            </div>
+          </div>
+          <div class="hdmi">
+            <div class="cl md lg">
+              <p class="cnter para">
+                My journey begins at the user interface, where I craft captivating and intuitive designs, ensuring a seamless and engaging user experience
+              </p>
+            </div>
+          </div>
+          <div class="text-center">
+            <a class="d-link" href="https://greensock.com/forums/topic/38210-svg-cursor-content-mask/#comment-190387" target="_blank">
+              <span>psst discover more</span>
+              <i class="btn-icon bi bi-arrow-right-short fs-4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hidden-content">
+        <div class="container-d">
+          <div class="hdmi">
+            <div class="cl md lg">
+              <p class="cnter para">
+                Better in frontend design and technologies with freelancing experience 
+              </p>
+            </div>
+          </div>
+          <div class="hdmi">
+            <div class="cl md lg">
+              <p class="cnter para">
+                 Don't ask 20 years of experience I was not coding in the womb    
+              </p>
+            </div>
+          </div>
+          <div class="text-center">
+            <div class="d-inline-flex justify-content-center align-items-center p-3">
+              <span>psst discover more</span>
+              <i class="btn-icon bi bi-arrow-right-short fs-4"></i>
+            </div>
+          </div>
+        </div>
+      </div>-->
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <p>OUR MENU</p>
+        <h1 class="text">DINNER<span class="moving-span">SPECIALITY</span></h1>
+        <h1 class="text">DESSERTS<span class="moving-span">WORKS</span></h1>
+        <h1 class="text">BRUNCH<span class="moving-span">VEGAN</span></h1>
+        <h1 class="text">WINE<span class="moving-span">OLD BUT BEST</span></h1>
+        <h1 class="text">PRIVATE DINING<span class="moving-span"><a href="https://twitter.com/prathamrai0" target="_blank">BOOK NOW</a></span></h1>
+    </div>
+    
+
+    <div class="booking">
+      
+      <h2 class="table_b">Reservations</h2>
+      <p>All parties larger than 10 are considered an event and must be booked
+        directly through our sales department.</p>
+        <p>Call us at (470)-819-4841</p>
+    
+      
+        <!--<div class="frame"> -->          
+      <a class="space_b" href="https://www.flowchef.co/">
+          <div class="button visit"><p class="nm">Book</p></div>
+          <div class="button_bg-grad"></div>
+      </a>
+      
+    </div>
+
+
+
+
+
+    <div id="cards">
+      
+        <div class="card">
+            <div class="card-border"></div>
+            <div class="card-content">
+                <div class="word">
+                    <h2>Black box</h2>
+                </div>
+                <div class="des"><p>the best way to solve problems</p></div>
+            </div>
+        </div>
+        
+        <div class="card" id="about">
+            <div class="card-border"></div>
+            <div class="card-content">
+                <div class="word2">
+                    <h2>Machine</h2>
+                </div>
+                <div class="des2"><p>reduce human load</p></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-border"></div>
+            <div class="card-content">
+                <div class="word3">
+                    <h2>Magic</h2>
+                </div>
+                <div class="des3"><p>basically science</p></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-border"></div>
+            <div class="card-content">
+                <div class="word">
+                    <h2>Roadmap</h2>
+                </div>
+                <div class="des4"><p>pathway to travel</p></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-border"></div>
+            <div class="card-content">
+                <div class="word5">
+                    <h2>Hover</h2>
+                </div>
+                <div class="des5"><p>smooth operator</p></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-border"></div>
+            <div class="card-content">
+                <div class="word6">
+                    <h2>Big Bang</h2>
+                </div>
+                <div class="des6"><p>start of everything</p></div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="circle">
+        <span class="circle__btn">
+          <ion-icon class="pause" name="pause"></ion-icon>
+          <ion-icon class="play" name="play"></ion-icon>
+          <i class="fa-solid fa-play"></i>
+          <i class="fa-solid fa-pause"></i>
+        </span>
+        <span class="circle__back-1"></span>
+        <span class="circle__back-2"></span>
+    </div>-->
+    
+    <main>
+        <div class="slides-container">
+          <div class="slides-inner">
+            
+            <div class="slide slide-1">
+              <div class="filter"></div>
+              <div class="info-container">
+                <div class="info-inner">
+                  <div class="title">
+                    <h2 class="project">Movie<br> big large title</h2>
+                  </div>
+                  <div class="meta">
+                     <div class="categorie">
+                       <p>Fictions</p>
+                     </div>
+                     <div class="separator"></div>
+                     <div class="realisateurs">
+                       <p>Morgan S. Dalibert & Valentin Vincent</p>
+                     </div>
+                  </div>
+                </div>
+      
+                <div class="info-inner">
+                  <div class="description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor dui vitae interdum semper. Proin convallis dolor ipsum, sed porttitor est consectetur quis. Donec nec mauris accumsan, viverra ex ac, volutpat sem. Donec aliquet sit amet turpi.</p>
+                  </div>
+                  <div class="frame">
+                    
+                    <a href="https://www.flowchef.co/">
+                        <div class="button"><p>Visit</p></div>
+                        <div class="button_bg-grad"></div>
+                    </a>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            
+            <div class="slide slide-2">
+              <div class="filter"></div>
+              <div class="info-container">
+                <div class="info-inner">
+                  <div class="title">
+                    <h2 class="project">Movie Title 2</h2>
+                  </div>
+                  <div class="meta">
+                     <div class="categorie">
+                       <p>Fictions</p>
+                     </div>
+                     <div class="separator"></div>
+                     <div class="realisateurs">
+                       <p>Morgan S. Dalibert & Valentin Vincent</p> 
+                     </div>
+                  </div>
+                </div>
+                
+                <div class="info-inner">
+                  <div class="description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor dui vitae interdum semper. Proin convallis dolor ipsum, sed porttitor est consectetur quis. Donec nec mauris accumsan, viverra ex ac, volutpat sem. Donec aliquet sit amet turpi.</p>
+                  </div>
+                  <div class="frame">
+                    
+                    <a href="https://www.flowchef.co/">
+                        <div class="button"><p>Visit</p></div>
+                        <div class="button_bg-grad"></div>
+                    </a>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            
+            <div class="slide slide-3">
+              <div class="filter"></div>
+              <div class="info-container">
+                <div class="info-inner">
+                  <div class="title">
+                    <h2 class="project">Movie Title 3</h2>
+                  </div>
+                  <div class="meta">
+                     <div class="categorie">
+                       <p>Fictions</p>
+                     </div>
+                     <div class="separator"></div>
+                     <div class="realisateurs">
+                       <p>Morgan S. Dalibert & Valentin Vincent</p>
+                     </div>
+                  </div>
+                </div>
+                
+                <div class="info-inner">
+                  <div class="description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor dui vitae interdum semper. Proin convallis dolor ipsum, sed porttitor est consectetur quis. Donec nec mauris accumsan, viverra ex ac, volutpat sem. Donec aliquet sit amet turpi.</p>
+                  </div>
+                  <div class="frame">
+                    
+                    <a href="https://www.flowchef.co/">
+                        <div class="button"><p>Visit</p></div>
+                        <div class="button_bg-grad"></div>
+                    </a>
+                 </div>
+                  
+                </div>
+              </div>
+            </div>
+          
+          <div id="progress-container">
+            <div id="progressBar"></div>
+          </div>
+        </div>
+      </main>
+
+    <audio autopla oop>
+        <source src="./sound (1).mp3" type="audio/wav" />
+    </audio>
+    <footer>
+        
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
