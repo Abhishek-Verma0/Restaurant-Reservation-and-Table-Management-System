@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Pixelify+Sans:wght@500;600&family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700&family=Roboto:wght@900&family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Italianno&family=Oswald&family=Pixelify+Sans:wght@500;600&family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700&family=Roboto:wght@900&family=Rubik+Glitch&display=swap');
+:root{
+    --purple: rgb(123, 31, 162);
+    --violet: rgb(103, 58, 183);
+    --pink: rgb(244, 143, 177);
+    --white: #b6b6b6;
+    --bg-color: rgb(20, 20, 20);
+    --card-color: rgb(23, 23, 23);
+    --text-color: #b6b6b6;
+    
+
+    /*clock*/
+    --primary-light: #8abdff;
+    --primary: #6d5dfc;
+    --primary-dark: #5b0eeb;
+  
+    --white: #FFFFFF;
+    --greyLight-1: #E4EBF5;
+    --greyLight-2: #c8d0e7;
+    --greyLight-3: #bec8e4;
+    --greyDark: #9baacf;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 33px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    z-index: 100;
+  }
+  .header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+
+    transition: 0.5s;
+  }
+  .header:hover::before {
+    left: 100%;
+  }
+  .logo_name{
+    font-family: "Italianno";
+    font-size: 60px;
+  }
+  .name{
+    display: flex;
+    align-items: baseline;
+  }
+  .logo {
+    color: var(--white);
+    font-weight: 800;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+  }
+  .icon{
+    height: 20px;
+    width:25px;
+    fill: #fdfbfb;
+  }
+
+  .navbar{
+    display: flex;
+    
+  }
+
+  .navbar a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: 0.3s;
+  }
+  .navbar a:hover {
+    color: var(--purple);
+  }
+  #menu-icon {
+    font-size: 36px;
+    color: #fff;
+    display: none;
+  }
+  /* BREAKPOINTS */
+  @media (max-width: 992px) {
+    .header {
+      padding: 1.25rem 4%;
+    }
+  }
+  @media (max-width: 768px) {
+    #menu-icon {
+      display: block;
+    }
+    .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 0.5rem 4%;
+      display: none;
+      
+    }
+    .navbar.active {
+      display: block;
+    }
+    .navbar a {
+      display: block;
+      margin: 1.5rem 0;
+    }
+    .nav-bg {
+      position: absolute;
+      top: 79px;
+      left: 0;
+      width: 100%;
+      height: 295px;
+
+      z-index: 99;
+      display: none;
+    }
+    .nav-bg.active {
+      display: block;
+    }
+}
+
+
+
+
+
+
+  
+    
+  
+  
+  section{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    
+    
+  
+  }
+  section .color{
+    position: absolute;
+    filter:blur(450px)
+  }
+  section .color:nth-child(1){
+    top: 50px;
+    width: 600px;
+    height: 500px;
+    background: var(--violet);
+    
+    
+  }
+  section .color:nth-child(2){
+    bottom: -150px;
+    left: 100px;
+    width: 500px;
+    height: 500px;
+    background: #85219e;
+    
+  }
+  section .color:nth-child(3){
+    bottom: 50px;
+    right: 100px;
+    width: 300px;
+    height: 300px;
+    
+  }
+  
+  .box{
+    position: relative;
+  }
+  .box .square{
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    animation: animate 10s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+  }
+  
+  
+  @keyframes animate 
+  {
+    0%,100%
+    {
+        transform: translateY(-40px);
+    }
+    50%
+    {
+        transform: translateY(40px);
+    }
+  }
+  
+  .box, .square:nth-child(1){
+    top: -100px;
+    right: 350px;
+    width: 100px;
+    height: 100px;
+    
+  }
+  .box, .square:nth-child(2){
+    top: 150px;
+    left: -450px;
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+  }
+  .box, .square:nth-child(3){
+    bottom: 50px;
+    right: -60px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+  }
+  .box, .square:nth-child(4){
+    bottom: -80px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+  }
+  .box, .square:nth-child(5){
+    top: -80px;
+    left: 140px;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .contaner{
+    position: absolute;
+    width: 400px;
+    min-height: 400px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  
+  }
+  
+  .form{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+  }
+  .form h2{
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+  }
+  
+  .form h2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background: #fff;
+  
+  }
+  
+  .form .inputBox{
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .form .inputBox input{
+    width: 100%;
+    background: rgba(255,255,255,0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+  
+  .form .inputBox input::placeholder{
+    color: #fff;
+  }
+  
+  .form .inputBox input[type="submit"] {
+    background: #fff;
+    color: #666;
+    max-width: 100px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .forget{
+    margin-top: 5px;
+    color: #fff;
+  }
+  .forget a{
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  
+  
+  
+ 
