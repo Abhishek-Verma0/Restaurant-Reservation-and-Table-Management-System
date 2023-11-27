@@ -49,7 +49,7 @@
             <div class="contaner">
                 <div class="form">
                     <h2>Booking Form</h2>
-                    <form>
+                    <form class="boxBack">
                     <div class="inputBox">
                         <input type="text" placeholder="Name" required >
                     </div>
@@ -59,8 +59,10 @@
                     <div class="inputBox">
                         <input type="time" placeholder="Time" required >
                     </div>
-                    <div class="inputBox">
-                        <input type="submit" value="Book">
+                    <div class="inputBox boxTxt">
+                        <div id="boxTxt"></div>
+
+                        <input type="submit" value="Book" onclick="dbox('THANK you for booking')">
                     </div>
                     </form>
                 </div>
