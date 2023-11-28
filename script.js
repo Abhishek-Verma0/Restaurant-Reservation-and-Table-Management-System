@@ -301,3 +301,18 @@ tl.progress(0.2);
 
 // ------- for review  cards
 
+
+
+
+
+
+
+
+
+/*dialog box*/
+function dbox (msg) {
+  if (msg != undefined) {
+    document.getElementById("boxTxt").innerHTML = msg;
+    document.getElementById("boxBack").classList.add("show");
+  } else { document.getElementById("boxBack").classList.remove("show"); }
+}
